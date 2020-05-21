@@ -2,7 +2,7 @@ $(document).ready(() => {
     var doctors 
     var filter = {
         name: [],
-        gender: [],
+        gender: ["Male"],
         location: [],
         specialisation: [],
         languages: [],
@@ -33,6 +33,27 @@ $(document).ready(() => {
         populateDoctors()
     }
 
+    // Clear Individual Filter
+    function clearIndividualFilter(value){
+
+        if(value === "Available"){
+            value = "true"
+        }else if(value === "Not Available"){
+            value = "false"
+        }
+
+        $.map(filter, (element,key) => {
+
+            var index = $.inArray(value,element)
+            if(index >= 0){
+                element.splice(index,1)
+            }
+
+        })
+
+        populateDoctors()
+    }
+
     // Method to add filters to the list
     function addFilterDataToList(){
         var filterFragment = document.createDocumentFragment()
@@ -45,6 +66,9 @@ $(document).ready(() => {
                 }
                 var filterTemplate = document.querySelector("div.filter-item[data-type='template']").cloneNode(true)
                 $(filterTemplate).find('span.filter-value').text(value)
+                $(filterTemplate).find('.filter-item-close').on('click', (e) => {
+                    clearIndividualFilter($(e.currentTarget).prev().text())
+                })
                 filterTemplate.style.display = "block"
                 filterFragment.appendChild(filterTemplate)
             });
@@ -238,7 +262,6 @@ $(document).ready(() => {
                 isItemValid = false
                 filter.languages.forEach(language => {
                     if($.inArray(language,item.languages) >= 0){
-                        console.log(item.languages)
                         isItemValid = true
                     }
                 });
