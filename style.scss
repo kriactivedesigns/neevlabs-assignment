@@ -219,6 +219,7 @@ $avatar-size: 90px;
                         position: absolute;
                         left: 50%;
                         transform: translateX(-50%);
+                        border-radius: 50%;
                         height: $avatar-size - 25;
                         width: $avatar-size - 25;
                     }
@@ -254,6 +255,7 @@ $avatar-size: 90px;
                         i{
                             line-height: 20px;
                             font-size: 18px;
+                            color: darkgrey;
                         }
                     }
                     .fees{
