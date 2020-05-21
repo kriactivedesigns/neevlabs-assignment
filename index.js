@@ -185,13 +185,11 @@ $(document).ready(() => {
 
     // Handle side menu drawer
     $('.menu-button').on('click', (e) => {
-        console.log("Clicked")
         $('.sidebar').animate({
             left: "0"
         }, 500)
     })
     $('.side-menu-close').on('click', (e) => {
-        console.log("Clicked")
         $('.sidebar').animate({
             left: "-350PX"
         }, 500)
