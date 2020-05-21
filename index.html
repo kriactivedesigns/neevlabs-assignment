@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Custom styles-->
+    <link rel="stylesheet" href="style.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Our Doctors</title>
+  </head>
+  <body>
+    
+    <div class="wrapper">
+        <!-- SideNavBar-->
+        <div class="sidebar">
+            <ul class="sidebar-nav">
+                <li class="sidebar-navlink">
+                    <a href="#">Our Doctors</a>
+                </li>
+                <li class="sidebar-navlink">
+                    <a href="#">How it works</a>
+                </li>
+                <li class="sidebar-navlink">
+                    <a href="#">Treatments</a>
+                </li>
+                <li class="sidebar-navlink">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="container-fluid">
+                <div class="row search-panel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col search-panel-title">Our Doctors (8)</div> 
+                            <div class="col">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search" aria-label="Search Doctors" aria-describedby="sdsds">
+                                    <div class="input-group-append" id="sdsds">
+                                        <span >
+                                            <i class="fa fa-search"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="filter-by-name" data-toggle="dropdown" aria-haspopup="true" aria-expanded='false'>
+                                        By Name
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="filter-by-name">
+                                        <button class="dropdown-item" type="button">Name 1</button>
+                                        <button class="dropdown-item" type="button">Name 2</button>
+                                        <button class="dropdown-item" type="button">Name 3</button>
+                                        <button class="dropdown-item" type="button">Name 4</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="filter-by-gender" data-toggle="dropdown" aria-haspopup="true" aria-expanded='false'>
+                                        Gender
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="filter-by-gender">
+                                        <button class="dropdown-item" type="button">Male</button>
+                                        <button class="dropdown-item" type="button">Female</button>
+                                        <button class="dropdown-item" type="button">Other</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="filter-by-location" data-toggle="dropdown" aria-haspopup="true" aria-expanded='false'>
+                                        Location
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="filter-by-location">
+                                        <button class="dropdown-item" type="button">Location 1</button>
+                                        <button class="dropdown-item" type="button">Location 2</button>
+                                        <button class="dropdown-item" type="button">Location 3</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="filter-by-spec" data-toggle="dropdown" aria-haspopup="true" aria-expanded='false'>
+                                        Areas of specialisation 
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="filter-by-spec">
+                                        <button class="dropdown-item" type="button">Area 1</button>
+                                        <button class="dropdown-item" type="button">Area 2</button>
+                                        <button class="dropdown-item" type="button">Area 3</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="filter-by-lang" data-toggle="dropdown" aria-haspopup="true" aria-expanded='false'>
+                                        Language Spoken
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="filter-by-lang">
+                                        <button class="dropdown-item" type="button">Language 1</button>
+                                        <button class="dropdown-item" type="button">Language 2</button>
+                                        <button class="dropdown-item" type="button">Language 3</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="container-fluid filter-row">
+                                    <div class="row">
+                                        <div class="col">
+                                            Male
+                                        </div>
+                                        <div class="col">
+                                            <button class="btn btn-outline-primary clear-button">Clear All</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="sort-by" data-toggle="dropdown" aria-haspopup="true" aria-expanded='false'>
+                                        Sort By: Alphabet
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="sort-by">
+                                        <button class="dropdown-item" type="button">Duration - Highest First</button>
+                                        <button class="dropdown-item" type="button">Duration - Lowest First</button>
+                                        <button class="dropdown-item" type="button">Fee - Highest First</button>
+                                        <button class="dropdown-item" type="button">Fee - Lowest First</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row doctors-list justify-content-center align-content-start">
+                    <div class="doctor flex-wrap">Doctor</div>
+                    <div class="doctor flex-wrap">Doctor</div>
+                    <div class="doctor flex-wrap">Doctor</div>
+                    <div class="doctor flex-wrap">Doctor</div>
+                    <div class="doctor flex-wrap">Doctor</div>
+                    <div class="doctor flex-wrap">Doctor</div>
+                    <div class="doctor flex-wrap">Doctor</div>
+                    <div class="doctor flex-wrap">Doctor</div>
+                    <div class="doctor flex-wrap">Doctor</div>
+                    <div class="doctor flex-wrap">Doctor</div>
+                </div>
+                <div class="row footer">
+                    footer
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
