@@ -316,18 +316,8 @@ $avatar-size: 90px;
     justify-content: space-between;
 }
 
-@media only screen and (max-width: 550px){  
-    #search{
-        max-width: 350px !important;
-        margin: 10px 0 5px 0;
-    }
-    .search-panel-title{
-        margin-top: 15px !important;
-    }
-}
 
-@media only screen and (max-width: 600px){
-    
+@mixin mediaQuery {
     #search{
         max-width: 270px !important;
     }
@@ -357,3 +347,29 @@ $avatar-size: 90px;
         margin: 5px 8px 5px 0;
     }
 }
+
+
+@media only screen and (max-width: 550px) and (orientation: landscape){  
+    #search{
+        margin: 10px 0 5px 0;
+    }
+    .search-panel-title{
+        margin-top: 15px !important;
+    }
+}
+
+@media only screen and (max-device-width: 640px) and (orientation: landscape){  
+    @include mediaQuery();   
+    .wrapper{
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    @include mediaQuery();
+    .wrapper{
+        height: 100vh !important;
+    }
+}
+
+
