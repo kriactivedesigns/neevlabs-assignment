@@ -195,6 +195,37 @@ $(document).ready(() => {
         }, 500)
     })
 
+    // Search panel expander
+    $('.searchpanel-expander').on('click', (e) => {
+
+        var element = $(e.target).children()
+        var expandedClassName = 'expanded'
+
+        if($(element).hasClass(expandedClassName)){
+            $(element).removeClass(expandedClassName)
+            $('.filter-choices').removeClass(expandedClassName)
+            $('.sort-doctors').removeClass(expandedClassName)
+        }else{
+            $(element).addClass(expandedClassName)
+            $('.filter-choices').addClass(expandedClassName)
+            $('.sort-doctors').addClass(expandedClassName)
+        }
+    })
+
+    $(window).on('resize', () => {
+        var element = $('.searchpanel-expander').children()
+        if(window.innerWidth > 600){
+            $(element).removeClass('expanded')
+            $('.filter-choices').removeClass('expanded')
+            $('.sort-doctors').removeClass('expanded')
+        }
+        else if(window.innerWidth <= 600){
+            $(element).addClass('expanded')
+            $('.filter-choices').addClass('expanded')
+            $('.sort-doctors').addClass('expanded')
+        }
+    })
+
     function filterData(data){
        
         var result = data
