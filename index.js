@@ -2,7 +2,7 @@ $(document).ready(() => {
     var doctors 
     var filter = {
         name: [],
-        gender: ["Male"],
+        gender: [],
         location: [],
         specialisation: [],
         languages: [],
@@ -295,7 +295,7 @@ $(document).ready(() => {
         for(var i = 0;i < keys.length; i++){
             var template = document.querySelector(".doctor[data-type='template']").cloneNode(true)
             $(template).find('div.avatar').append("<img src='https://robohash.org/placeatevenietminima.png?size=50x50&set=set1'/>")
-            $(template).find('h5.name').text(filteredData[i].name)
+            $(template).find('h6.name').text(filteredData[i].name)
             $(template).find('h6.department').text(filteredData[i].department)
             $(template).find('div.qualifications').text(filteredData[i].qualifications)
             $(template).find('span.duration-value').text(filteredData[i].duration)
@@ -306,6 +306,7 @@ $(document).ready(() => {
         
         $('.doctors-list').empty()
         $('.doctors-list').append(fragment)
+        $('#doctor-number').text(filteredData.length)
         delete fragment
     }
 

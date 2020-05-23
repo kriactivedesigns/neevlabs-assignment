@@ -171,6 +171,7 @@ $avatar-size: 90px;
             }
             .filter-item{
                 @include filterButton();
+                height: 25px;
                 .filter-item-close{
                     width: 20px;
                     height: 20px;
