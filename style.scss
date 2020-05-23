@@ -363,6 +363,7 @@ $avatar-size: 90px;
     .wrapper{
         height: 500px;
     }
+    /* Prevents Mobile Safari from bumping up font sizes in landscape */
     body {
 		-webkit-text-size-adjust: 100%;
 		-ms-text-size-adjust: 100%;
