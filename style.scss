@@ -358,7 +358,7 @@ $avatar-size: 90px;
     }
 }
 
-@media only screen and (max-device-width: 640px) and (orientation: landscape){  
+@media only screen and (max-device-width: 640px) and (max-device-height: 640px) and (orientation: landscape){  
     @include mediaQuery();   
     .wrapper{
         height: 500px;
