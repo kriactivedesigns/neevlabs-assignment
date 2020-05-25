@@ -135,6 +135,8 @@ $avatar-size: 90px;
         .search-panel{
             background-color: $primary-color;
             flex: 0 1 auto;
+            -webkit-box-flex: 0 1 auto;
+            -webkit-flex: 0 1 auto;
             .search-panel-title{
                 h6{
                     padding-top: auto;
